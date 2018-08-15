@@ -1,0 +1,32 @@
+1. O que são sistemas embarcados?
+
+São sistemas que utilizam hardware, software e possivelmente outros componentes elétricos/eletrônicos e mecânicos, que são utilizados para desempenhar uma tarefa específica (ou conjunto de tarefas). Geralmente, fazem parte de um produto maior e operam processando informações para auxiliar no funcionamento do todo. 
+
+2. O que são sistemas microprocesssados?
+
+São sistemas que dispõem de um computador encapsulado e dedicado exclusivamente para a execução da funcionalidade alvo do sistema.
+
+3. Apresente aplicações de sistemas embarcados:
+
+(a) Para a indústria automotiva; 
+
+Computadores de bordo; Sistema de monitoramento de temperatura; Sistema de sensores de estacionamento.
+
+(b) Para eletrodomésticos; 
+
+Temporizadores automatizados; Sistema de feedback de parâmetros do dispositivo. (Como temperatura interna ou sistema que informa problemas com a operação, etc.).
+
+(c) Para automação industrial.
+
+Sistema de controle de temperatura dos ambientes; Sistema de controle de acesso a localidades restritas; sistemas de monitoramento das condições das máquinas. 
+
+4. Cite arquiteturas possíveis e as diferenças entre elas.
+
+Microcontroladores, processadores de propósito geral (GPPs), Digital Signal Processors (DSPs), Field Programmable Gate Arrays (FPGAs), Application Specific Integrated Circuits (ASICs), System-on-Chip (SoCs), Multiple Processor System-on-Chip (MPSoCs).
+
+Microcontroladores, GPPs, SoCs e MPSoCs são arquiteturas que podem ser utilizadas para serem utilizados em processamento de propósito gerais. Entretanto, isto não impede de serem utilizadas em sistemas embarcados por permitir a programação para variadas tarefas. 
+As demais arquiteturas citadas são para tarefas mais específicas e independentes.
+
+5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+
+Devido às características da raspberry Pi que são: memória de 1 GB DDR2, Sistema operacional Linux no cartão de memória, 4 portas USB 2.0, 40 pinos de entrada e saída digital, conector de câmera e display . Além disso, preço acessível. 
