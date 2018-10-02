@@ -1,0 +1,139 @@
+Para todas as questões, escreva os comandos correspondentes no terminal.
+
+  1.  Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
+      
+      mateus@R2D2:~/Área de Trabalho$ echo "Ola mundo cruel!" >> Ola_mundo.txt
+      mateus@R2D2:~/Área de Trabalho$ cat Ola_mundo.txt 
+      Ola mundo cruel!
+
+  2.  Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+      
+      mateus@R2D2:~$ cd /
+      mateus@R2D2:/$ ls
+      bin    dev   initrd.img  lib64       mnt   root  snap      sys  var
+      boot   etc   lib         lost+found  opt   run   srv       tmp  vmlinuz
+      cdrom  home  lib32       media       proc  sbin  swapfile  usr
+      
+  3.  Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
+
+      mateus@R2D2:/$ ls -l
+      total 970168
+      drwxr-xr-x   2 root root      4096 set 12 01:00 bin
+      drwxr-xr-x   4 root root      4096 set 12 06:22 boot
+      drwxrwxr-x   2 root root      4096 abr 22 15:56 cdrom
+      drwxr-xr-x  20 root root      4460 out  2 18:04 dev
+      drwxr-xr-x 133 root root     12288 set 12 05:58 etc
+      drwxr-xr-x   3 root root      4096 abr 22 15:57 home
+      lrwxrwxrwx   1 root root        33 set 12 06:18 initrd.img -> boot/initrd.img-4.15.0-34-generic
+      drwxr-xr-x  22 root root      4096 set 12 00:48 lib
+      drwxr-xr-x   2 root root      4096 set 12 00:34 lib32
+      drwxr-xr-x   2 root root      4096 set 12 00:34 lib64
+      drwx------   2 root root     16384 abr 22 15:54 lost+found
+      drwxr-xr-x   3 root root      4096 abr 22 16:09 media
+      drwxr-xr-x   2 root root      4096 jan  5  2018 mnt
+      drwxr-xr-x   3 root root      4096 mai 16 06:36 opt
+      dr-xr-xr-x 270 root root         0 out  2 14:57 proc
+      drwx------   6 root root      4096 abr 22 18:20 root
+      drwxr-xr-x  27 root root       820 out  2 18:29 run
+      drwxr-xr-x   2 root root     12288 set 12 01:00 sbin
+      drwxr-xr-x   6 root root      4096 mai 16 06:25 snap
+      drwxr-xr-x   2 root root      4096 jan  5  2018 srv
+      -rw-------   1 root root 993341440 abr 22 15:54 swapfile
+      dr-xr-xr-x  13 root root         0 out  2 14:57 sys
+      drwxrwxrwt  15 root root      4096 out  2 18:49 tmp
+      drwxr-xr-x  12 root root      4096 abr 22 18:59 usr
+      drwxr-xr-x  14 root root      4096 jan  5  2018 var
+      lrwxrwxrwx   1 root root        30 set 12 06:18 vmlinuz -> boot/vmlinuz-4.15.0-34-generic
+
+
+  4.  Apresente somente as pastas dentro da pasta 'root'.
+  
+      mateus@R2D2:/$ ls -d */
+      bin/    dev/   lib/    lost+found/  opt/   run/   srv/  usr/
+      boot/   etc/   lib32/  media/       proc/  sbin/  sys/  var/
+      cdrom/  home/  lib64/  mnt/         root/  snap/  tmp/
+
+  5.  Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
+        
+      mateus@R2D2:/$ date -d "06 July 2008"
+      dom jul  6 00:00:00 -03 2008
+      mateus@R2D2:/$ date -d "06 July 2009"
+      seg jul  6 00:00:00 -03 2009
+      mateus@R2D2:/$ date -d "06 July 2010"
+      ter jul  6 00:00:00 -03 2010
+      mateus@R2D2:/$ date -d "06 July 2011"
+      qua jul  6 00:00:00 -03 2011
+      mateus@R2D2:/$ date -d "06 July 2012"
+      sex jul  6 00:00:00 -03 2012
+      mateus@R2D2:/$ date -d "06 July 2013"
+      sáb jul  6 00:00:00 -03 2013
+      mateus@R2D2:/$ date -d "06 July 2014"
+      dom jul  6 00:00:00 -03 2014
+      mateus@R2D2:/$ date -d "06 July 2015"
+      seg jul  6 00:00:00 -03 2015
+      mateus@R2D2:/$ date -d "06 July 2016"
+      qua jul  6 00:00:00 -03 2016
+      mateus@R2D2:/$ date -d "06 July 2017"
+      qui jul  6 00:00:00 -03 2017
+      mateus@R2D2:/$ date -d "06 July 2018"
+      sex jul  6 00:00:00 -03 2018
+
+Para as questões a seguir, use a pasta no endereço https://github.com/DiogoCaetanoGarcia/Sistemas_Embarcados/raw/master/Questoes/02_Intro_Linux_arqs.zip
+
+  6.  Liste somente os arquivos com extensão .txt.
+
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls *.txt
+      arquivo.txt   cal_1996.txt  cal_2003.txt  cal_2010.txt  cal_2017.txt
+      cal_1990.txt  cal_1997.txt  cal_2004.txt  cal_2011.txt  cal_2018.txt
+      cal_1991.txt  cal_1998.txt  cal_2005.txt  cal_2012.txt  cal_2019.txt
+      cal_1992.txt  cal_1999.txt  cal_2006.txt  cal_2013.txt  cal_2020.txt
+      cal_1993.txt  cal_2000.txt  cal_2007.txt  cal_2014.txt  cal.txt
+      cal_1994.txt  cal_2001.txt  cal_2008.txt  cal_2015.txt  cal_types.txt
+      cal_1995.txt  cal_2002.txt  cal_2009.txt  cal_2016.txt
+
+  7.  Liste somente os arquivos com extensão .png.
+
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls *.png
+      BusinessTux.png               linux.png
+      linux1.png                    Tux-in-a-suit.png
+      linux2.png                    tux-linux-professional_0-100520358-orig.png
+      linux3.png                    TUX.png
+      linux_inside.png              xanderrun-tux-construction-8454.png
+      linux-penguin-icon-39742.png
+
+  8.  Liste somente os arquivos com extensão .jpg.
+
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls *.jpg
+      d36f1a2be6a927ac3e2e1e4eacdedded.jpg  oRva1OGD.jpg
+      oRva1OGD_400x400.jpg                  zz39112bb5.jpg
+ 
+  9.  Liste somente os arquivos com extensão .gif.
+  
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls *.gif
+      1086970.gif
+
+  10.  Liste somente os arquivos que contenham o nome 'cal'.
+
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls cal*
+      cal_1990.txt  cal_1997.txt  cal_2004.txt  cal_2011.txt  cal_2018.txt
+      cal_1991.txt  cal_1998.txt  cal_2005.txt  cal_2012.txt  cal_2019.txt
+      cal_1992.txt  cal_1999.txt  cal_2006.txt  cal_2013.txt  cal_2020.txt
+      cal_1993.txt  cal_2000.txt  cal_2007.txt  cal_2014.txt  cal.txt
+      cal_1994.txt  cal_2001.txt  cal_2008.txt  cal_2015.txt  cal_types.txt
+      cal_1995.txt  cal_2002.txt  cal_2009.txt  cal_2016.txt
+      cal_1996.txt  cal_2003.txt  cal_2010.txt  cal_2017.txt
+
+  11.  Liste somente os arquivos que contenham o nome 'tux'.
+  
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls *[tT][uU][xX]*
+      BusinessTux.png
+      Tux-in-a-suit.png
+      tux-linux-professional_0-100520358-orig.png
+      TUX.png
+      xanderrun-tux-construction-8454.png
+
+  12.  Liste somente os arquivos que comecem com o nome 'tux'.
+
+      mateus@R2D2:~/Downloads/02_Intro_Linux_arqs/Arqs_aula_02$ ls [tT][uU][xX]*
+      Tux-in-a-suit.png  tux-linux-professional_0-100520358-orig.png  TUX.png
+
