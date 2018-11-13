@@ -1,0 +1,35 @@
+1.  Apresente 5 sistemas operacionais suportados pelo Raspberry Pi, e algumas de suas características.
+
+      I - Raspian (Debian), Ubuntu Matte (baseado no Ubuntu), Pidora(baseado no Fedora), etc. Todos são baseados em distribuições linux sendo o Raspian o mais recomendado para iniciantes na Raspberry Pi.
+      II - RetroPie. Este SO é utilizado para emular jogos através de ROMs. 
+      III - Firefox OS - Uma iniciativa da Firefox em conjunto com o Linux.
+      IV - Windows IoT - O Windows lançou este SO para dispositivos de pequeno porte. Ele é inspirado no windows 10 e é capaz de rodar aplicativos UWP e fornece suporte para CPUs ARM.
+      V - Android. A Broadcom iniciou o  desenvolvimento oficial do Android 4.0, embora não tenha vingado e o projeto esteja parado a algum tempo. 
+
+2.  Apresente as formas de instalação de sistemas operacionais para o Raspberry Pi.
+  
+    A forma clássica de instalação é através do download da ISO do sistema e da instalação desta ISO em um cartão SD. Entretanto, existem softwares que auxiliam a instalação como o NOOBs - New out of the box software. Ele auxilia em todo o processo de download e instalação de ISOs. 
+
+3.  Apresente 3 formas de desenvolvimento de software para o Raspberry Pi.
+    
+   - Através da IDE Adafruit Web. Ele é projetado para prover ao usuário a possibilidade de trabalhar diretamente no Raspberry pi através de uma interface web. 
+   - Eclipse IDE - Esta IDE é utilizada princiaplemnte na programação em JAVA pois é otimizada para isto. Entretanto, há IDEs similares para PHP e C/C++. 
+   - Linha de comando. Instalando um compilador no terminal é possível desenvolver e executar os códigos diretamente pela plinhad e comando. 
+
+4.  Apresente 3 formas de acesso remoto ao Raspberry Pi.
+
+  - VNC - Acesso remoto através de uma interface gráfica em uma janela de outro computador 
+  - FTP - É possível fazer a transferência de arquivos entre um computador e outro utilizando o protocolo FTP (File Transfer Protocol) 
+  - SSH - Acesso à linha de comando na Raspberry Pi através de outro computador.
+
+5.  Apresente as formas possíveis de compilação de código em C para o Raspberry Pi.
+    
+    Uma das maneira é utilizando o compilador GCC através da linha de comando no terminal.  
+    Por exemplo: 
+    $gcc codigo.c -o codigoCompilado
+
+6.  Apresente as formas possíveis de compilação de código em Python para o Raspberry Pi.
+    
+    Acessando o ambiente de desenvolvimento em Python no terminal. 
+    Por exemplo:
+    $python3 codigo.py
