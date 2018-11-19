@@ -1,8 +1,15 @@
 1.    Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+    
+      O modelo a ser utilizado será a Raspberry pi 3. A principal razão é por ser a versão mais atual do microcontrolador e já possuir o módulo de WiFi que será usado no projeto. Além de já possuir o microcontrolador. 
 
 2.    Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
 
+      Será utilizado o Raspbian por ser mais adequado a usuários iniciantes. 
+
 3.    Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
-
+      
+      Ao adquirir a placa foi fornecido um cartão com o software noobs instalado que auxilia o processo de instalação. Entretanto, caso necessário fazer uma instalação sem utilizar este processo. Pode-se baixar a ISO através do site: https://www.raspberrypi.org/downloads/raspbian/. Uma vez baixado, basta-se fazer a queima do ISO através de outro software adequado.
+      
 4.    Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
-
+    
+      Espera-se que seja possível desenvolver boa parte do código em linguagem C. Apesar que, em casos onde a dificuldade se eleve a ponto de comprometer a entrega do dispositivo, será flexibilizado para a linguagem python. Para fazer essa programação, será utilizado o editor nano da raspberry. 
