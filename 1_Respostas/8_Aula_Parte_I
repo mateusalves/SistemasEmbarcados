@@ -2,8 +2,13 @@
 1.    Quais são as vantagens e desvantagens em utilizar:
 
 (a) fork?
-
+ 
+ Com esta função, você cria uma cópia integral do processo herdando todas as funções e variáveis utilizadas no programa antes da chamada da função. Isso faz com que sejam utilizada mais memória
+ 
 (b) threads?
+Com thread é possível executar várias tarefas enquanto o programa principal ainda está em execução
+
+
 
 2.    Quantas threads serão criadas após as linhas de código a seguir? Quantas coexistirão? Por quê?
 
@@ -22,6 +27,8 @@ int main (int argc, char** argv)
 	return 0;
 }
 
+2 threads. Haverá o programa principal e a Thread 1 e a Thread 2. Todas elas coexistirão
+
 (b)
 
 void* funcao_thread_1(void *arg);
@@ -36,11 +43,16 @@ int main (int argc, char** argv)
 	pthread_join(t2, NULL);
 	return 0;
 }
+2 threads. O programa principal irá coexistir com a primeira thread e após a thread t1 ser finalizada ele irá coexistir com a thread t2.
 
 3.    Apresente as características e utilidades das seguintes funções:
 
 (a) pthread_setcancelstate()
+ 
+ essa função torna possivel o cancelamento da thread a partir de um valor passado pelo parâmetro state do tipo int.  O estado de cancelamento é retornado no endereço designado pelo ponteiro int *oldstate. A função, portanto, tem a seguinte chamada: int pthread_setcancelstate(int state, int *oldstate);
 
 (b) pthread_setcanceltype()
+
+ essa função torna possivel o cancelamento da thread a partir de um valor passado pelo parâmetro state do tipo int.  O estado de cancelamento é retornado no endereço designado pelo ponteiro int *oldstate. A função, portanto, tem a seguinte chamada: int pthread_setcancelstate(int type, int *oldtype);
 
 (DICA: elas são relacionadas à função pthread_cancel().)
